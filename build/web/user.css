@@ -1,0 +1,278 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background: url('images/Back_Ground.jpg') ;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+section {
+    background: transparent; 
+    width: auto;
+    height: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-height: 85vh;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.hello {
+    position: absolute;
+    font-size: 25px;
+    color: #fff;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.hello p{
+    margin-left: 10px;
+    font-size: 35px;
+
+}
+.avatar-container {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.avatar {
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#userInfo {
+    position: absolute;
+    top: 100%;
+    left: 80%;
+    transform: translateX(-50%);
+    background: transparent;
+    padding: 10px;
+    border: none;
+    display: none;
+    text-align: left;
+    backdrop-filter: blur(15px);
+}
+
+#userInfo p {
+    margin: 0;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+#logoutLink {
+    margin-top: 10px;
+}
+
+.hello:hover #userInfo {
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+header{
+    top: 20px;
+    position: absolute;
+    font-size: 50px;
+    color: #fff;
+}
+
+h2{
+    font-size: 15px;
+    color: #00ff00;
+    text-align: center;
+    border-bottom: 20px;
+}
+
+input:focus ~ label,
+input:valid ~ label,
+input:not(:placeholder-shown) ~ label {
+    top: -5px;
+    font-size: 15px;
+}
+
+.table-container {
+    max-height: 550px; 
+    max-width: 1100px;
+    overflow-y: auto; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+table thead {
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+}
+
+
+table th {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+table tbody tr {
+    background: transparent;
+}
+
+table td {
+    height: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
+table td input{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+table td img{
+    height: 100px;
+    width: 100px;
+}
+
+
+.search-box {
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+
+.search-box input{
+    width: 23%;
+    height: 25px;
+    border: 1px solid #000000;
+    outline: none;
+    font-size: 18px;
+    background: transparent;
+    padding: 5px;
+    color: #fff;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    margin: 5px;
+}
+
+.search-box button{
+    width: 15%;
+    height: 25px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.search-box a button{
+    width:  100%;
+}
+
+
+
+button:hover {
+    background: #ccc;
+}
+
+table button{
+    width: 100%;
+    height: 25px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    text-align: center;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content {
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
